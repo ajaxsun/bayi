@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@mipmap/icon_bg"
+              android:orientation="vertical"
+              android:keepScreenOn="true"
+              android:id="@+id/llContent"
+              tools:context=".ui.setting.ScreenSaveSettingActivity">
+
+    <include layout="@layout/titlebusiness"></include>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x100"
+            android:layout_marginTop="@dimen/y170"
+            android:gravity="center_vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="屏保播放内容："
+                android:textColor="@color/color_fffffff"
+                android:textSize="@dimen/y36"/>
+
+        <RadioGroup
+                android:id="@+id/rgContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <RadioButton
+                    android:id="@+id/rbPic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/y50"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/dr_check"
+                    android:drawablePadding="@dimen/y20"
+                    android:text="图片"
+                    android:textColor="@color/color_fffffff"
+                    android:textSize="@dimen/y36"/>
+
+            <RadioButton
+                    android:id="@+id/rbVidea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/y100"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/dr_check"
+                    android:drawablePadding="@dimen/y20"
+                    android:text="视频"
+                    android:textColor="@color/color_fffffff"
+                    android:textSize="@dimen/y36"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x100"
+            android:layout_marginTop="@dimen/y150"
+            android:gravity="center_vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="每页停留时间:"
+                android:textColor="@color/color_fffffff"
+                android:textSize="@dimen/y36"/>
+
+        <EditText
+                android:id="@+id/etInterM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/y50"
+                android:background="@mipmap/icon_editkuang"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="@color/color_fffffff"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/y30"
+                android:text="单位（秒）"
+                android:textColor="@color/color_fffffff"
+                android:textSize="@dimen/y36"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x100"
+            android:layout_marginTop="@dimen/y150"
+            android:gravity="center_vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="进入屏保时间:"
+                android:textColor="@color/color_fffffff"
+                android:textSize="@dimen/y36"/>
+
+        <EditText
+                android:id="@+id/etJionScreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/y50"
+                android:background="@mipmap/icon_editkuang"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="@color/color_fffffff"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/y30"
+                android:text="单位（秒）"
+                android:textColor="@color/color_fffffff"
+                android:textSize="@dimen/y36"/>
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/btnSave"
+            android:layout_width="@dimen/y270"
+            android:layout_height="@dimen/y74"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y100"
+            android:background="@mipmap/icon_button"
+            android:text="保存"
+            android:textSize="@dimen/y36"
+            android:textStyle="bold"/>
+</LinearLayout>

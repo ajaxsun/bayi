@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:background="@mipmap/icon_main">
+
+    <include layout="@layout/titlebusiness"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/y44"
+        android:layout_marginLeft="@dimen/y100"
+        android:layout_marginRight="@dimen/y100"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@mipmap/icon_shuchu2"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@color/color_fffffff"
+            android:textSize="@dimen/y36" />
+
+        <TextView
+            android:id="@+id/tvIntroduce"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="介绍"
+            android:textColor="@color/color_fffffff"
+            android:textSize="@dimen/y36" />
+
+        <TextView
+            android:id="@+id/tvBusiness"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:text="体验"
+            android:textColor="@color/color_fffffff"
+            android:textSize="@dimen/y36" />
+
+    </LinearLayout>
+</RelativeLayout>

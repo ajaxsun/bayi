@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/icon_bg"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebusiness"></include>
+
+
+    <RelativeLayout
+        android:id="@+id/llAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/y100"
+
+        android:layout_marginRight="@dimen/y100"
+        android:layout_marginTop="@dimen/y80"
+        android:background="@mipmap/icon_settingbg">
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="@dimen/y60"
+            android:layout_height="@dimen/y60"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/y135"
+            android:src="@mipmap/icon_about" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/y60"
+            android:layout_toRightOf="@+id/iv"
+            android:text="关于"
+            android:textColor="@color/color_fffffff"
+            android:textSize="@dimen/y54" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/y60"
+            android:text="v1.0"
+            android:textColor="@color/color_fffffff"
+            android:textSize="@dimen/y54" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llBussinessContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/y100"
+        android:layout_marginRight="@dimen/y100"
+        android:layout_marginTop="@dimen/y100"
+        android:background="@mipmap/icon_settingbg"
+        android:gravity="center_vertical"
+  >
+
+        <ImageView
+            android:layout_width="@dimen/y60"
+            android:layout_height="@dimen/y60"
+            android:layout_marginLeft="@dimen/y135"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y60"
+            android:text="业务介绍内容管理"
+            android:textColor="@color/color_fffffff"
+
+            android:textSize="@dimen/y54" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llCustomerRepair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/y100"
+        android:layout_marginRight="@dimen/y100"
+        android:layout_marginTop="@dimen/y80"
+        android:background="@mipmap/icon_settingbg"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/y60"
+            android:layout_height="@dimen/y60"
+            android:layout_marginLeft="@dimen/y135"
+            android:src="@mipmap/icon_cumer" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y60"
+            android:text="客户经理信息维护"
+            android:textColor="@color/color_fffffff"
+            android:textSize="@dimen/y54" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPwdUpdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/y100"
+        android:layout_marginRight="@dimen/y100"
+        android:layout_marginTop="@dimen/y80"
+        android:background="@mipmap/icon_settingbg"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/y60"
+            android:layout_height="@dimen/y60"
+            android:layout_marginLeft="@dimen/y135"
+            android:src="@mipmap/icon_updatpwd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y60"
+            android:text="修改密码"
+            android:textColor="@color/color_fffffff"
+            android:textSize="@dimen/y54" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llScreenSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/y100"
+        android:layout_marginRight="@dimen/y100"
+        android:layout_marginTop="@dimen/y80"
+        android:background="@mipmap/icon_settingbg"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/y60"
+            android:layout_height="@dimen/y60"
+            android:layout_marginLeft="@dimen/y135"
+            android:src="@mipmap/icon_pingbao" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y60"
+            android:text="屏保设置"
+            android:textColor="@color/color_fffffff"
+            android:textSize="@dimen/y54" />
+    </LinearLayout>
+</LinearLayout>

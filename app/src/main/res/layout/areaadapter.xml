@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/y90"
+
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="@dimen/y848"
+        android:layout_height="@dimen/y106"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y74"
+            android:gravity="center_vertical"
+            android:text="区域：朝阳"
+            android:textColor="@color/color_fffffff"
+            android:textSize="@dimen/y36" />
+
+        <Button
+            android:id="@+id/btnbianji"
+            android:layout_width="@dimen/y200"
+            android:layout_height="@dimen/y74"
+            android:layout_marginRight="@dimen/y40"
+            android:layout_toLeftOf="@+id/btnLook"
+            android:background="@mipmap/icon_button"
+            android:text="编辑"
+            android:textColor="@color/color_333333"
+            android:textSize="@dimen/y36" />
+
+        <Button
+            android:id="@+id/btnLook"
+            android:layout_width="@dimen/y200"
+            android:layout_height="@dimen/y74"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/icon_button2"
+            android:text="查看"
+            android:textColor="@color/color_fffffff"
+            android:textSize="@dimen/y36" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y3"
+            android:layout_alignParentBottom="true"
+            android:background="#909191"></View>
+    </RelativeLayout>
+</LinearLayout>

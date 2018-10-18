@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@mipmap/icon_bg"
+              android:orientation="vertical"
+              android:id="@+id/llContent"
+              android:keepScreenOn="true"
+              tools:context=".ui.setting.PwdActivity">
+
+
+    <include layout="@layout/titlebusiness"></include>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y120"
+            android:layout_marginRight="@dimen/y120"
+            android:layout_marginTop="@dimen/y150">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/y40"
+                android:text="原密码:"
+
+                android:textColor="@color/color_fffffff"
+                android:textSize="@dimen/y36"/>
+
+        <EditText
+                android:id="@+id/etOldPwd"
+                android:textColor="@color/color_fffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditViewBG"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y120"
+            android:layout_marginRight="@dimen/y120">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/y40"
+                android:text="新密码:"
+                android:textColor="@color/color_fffffff"
+                android:textSize="@dimen/y36"/>
+
+        <EditText
+                android:id="@+id/etNewPwd"
+                android:textColor="@color/color_fffffff"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditViewBG"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y120"
+            android:layout_marginRight="@dimen/y120">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/y40"
+                android:text="确认密码:"
+
+                android:textColor="@color/color_fffffff"
+                android:textSize="@dimen/y36"/>
+
+        <EditText
+                android:id="@+id/etOkPwd"
+                android:textColor="@color/color_fffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/EditViewBG"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y80"
+            android:gravity="center">
+
+        <Button
+                android:id="@+id/btnSave"
+                android:layout_width="@dimen/y320"
+                android:layout_height="@dimen/y74"
+                android:background="@mipmap/icon_button"
+                android:text="保存"
+
+                android:textSize="@dimen/y36"
+                android:textStyle="bold"/>
+
+        <Button
+                android:id="@+id/btnReset"
+                android:layout_width="@dimen/y320"
+                android:layout_height="@dimen/y74"
+                android:layout_marginLeft="@dimen/y50"
+                android:background="@mipmap/icon_button2"
+                android:text="重置"
+                android:textColor="@color/color_fffffff"
+                android:textSize="@dimen/y36"
+                android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>

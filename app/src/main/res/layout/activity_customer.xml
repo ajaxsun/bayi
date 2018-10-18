@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/icon_bg"
+    android:orientation="vertical"
+    android:keepScreenOn="true"
+    tools:context=".ui.main.customer.CustomerActivity">
+
+    <include layout="@layout/titlebusiness"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y120">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_yuan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="上传"
+                    android:textColor="@color/color_fffffff"
+                    android:textSize="@dimen/y38" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/y118"
+                android:layout_marginTop="@dimen/y134">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="区域："
+                    android:textColor="@color/color_fffffff"
+                    android:textSize="@dimen/y36" />
+
+                <EditText
+                    android:layout_width="@dimen/y720"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/y40"
+                    android:textColor="@color/color_fffffff"
+                    android:textSize="@dimen/y36"
+                    android:theme="@style/EditViewBG" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/y118"
+                android:layout_marginTop="@dimen/y70">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名："
+                    android:textColor="@color/color_fffffff"
+                    android:textSize="@dimen/y36" />
+
+                <EditText
+                    android:layout_width="@dimen/y720"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/y40"
+
+                    android:textColor="@color/color_fffffff"
+                    android:textSize="@dimen/y36"
+                    android:theme="@style/EditViewBG" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/y118"
+                android:layout_marginTop="@dimen/y70">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="工号："
+
+                    android:textColor="@color/color_fffffff"
+                    android:textSize="@dimen/y36" />
+
+                <EditText
+                    android:layout_width="@dimen/y720"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/y40"
+
+                    android:textColor="@color/color_fffffff"
+                    android:textSize="@dimen/y36"
+                    android:theme="@style/EditViewBG" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/y118"
+                android:layout_marginTop="@dimen/y70">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电话："
+
+                    android:textColor="@color/color_fffffff"
+                    android:textSize="@dimen/y36" />
+
+                <EditText
+                    android:layout_width="@dimen/y720"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/y40"
+
+                    android:textColor="@color/color_fffffff"
+                    android:textSize="@dimen/y36"
+                    android:theme="@style/EditViewBG" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/y118"
+
+                android:layout_marginTop="@dimen/y70">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微信："
+
+                    android:textColor="@color/color_fffffff"
+                    android:textSize="@dimen/y36" />
+
+                <RelativeLayout
+                    android:id="@+id/rlWeixinUpload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/y40">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/icon_fang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="上传"
+                        android:textColor="@color/color_fffffff"
+                        android:textSize="@dimen/y36" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

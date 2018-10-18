@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/color_fffffff</item>
+    </style>    <!-- Base application theme. -->
+    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="EditViewBG" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#8a8d8e</item>
+        <item name="colorControlActivated">#8a8d8e</item>
+    </style>
+
+    <style name="EditViewBG2" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#727f82</item>
+        <item name="colorControlActivated">#727f82</item>
+        <item name="android:layout_height">@dimen/y1</item>
+        <item name="android:dividerHeight">@dimen/y1</item>
+        <item name="android:layout_width">@dimen/y156</item>
+    </style>
+</resources>

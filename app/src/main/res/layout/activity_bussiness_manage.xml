@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/icon_bg"
+    android:orientation="vertical"
+    android:keepScreenOn="true"
+    tools:context=".ui.main.business.BussinessManageActivity">
+
+    <include layout="@layout/titlebusiness"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y260"
+        android:layout_marginLeft="@dimen/y100"
+        android:layout_marginRight="@dimen/y100"
+        android:layout_marginTop="@dimen/y75"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/icon_business"
+            android:gravity="center"
+            android:text="节能用电常识介绍"
+            android:textColor="@color/color_fffffff"
+            android:textSize="@dimen/y50">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnUpload1"
+                android:layout_width="@dimen/y240"
+                android:layout_height="@dimen/y74"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/icon_button"
+                android:gravity="center"
+                android:text="上传"
+                android:textSize="@dimen/y36"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btnLook1"
+                android:layout_width="@dimen/y240"
+                android:layout_height="@dimen/y74"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/y40"
+                android:background="@mipmap/icon_button2"
+                android:gravity="center"
+                android:text="预览"
+                android:textColor="@color/color_fffffff"
+                android:textSize="@dimen/y36"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y260"
+        android:layout_marginLeft="@dimen/y100"
+        android:layout_marginRight="@dimen/y100"
+        android:layout_marginTop="@dimen/y75"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/icon_business"
+            android:gravity="center"
+            android:text="安全用电常识介绍"
+            android:textColor="@color/color_fffffff"
+            android:textSize="@dimen/y50">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnUpload2"
+                android:layout_width="@dimen/y240"
+                android:layout_height="@dimen/y74"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/icon_button"
+                android:gravity="center"
+                android:text="上传"
+                android:textSize="@dimen/y36"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnLook2"
+                android:layout_width="@dimen/y240"
+                android:layout_height="@dimen/y74"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/y40"
+                android:background="@mipmap/icon_button2"
+                android:gravity="center"
+                android:text="预览"
+                android:textColor="@color/color_fffffff"
+                android:textSize="@dimen/y36"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y260"
+        android:layout_marginLeft="@dimen/y100"
+        android:layout_marginRight="@dimen/y100"
+        android:layout_marginTop="@dimen/y75"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/icon_business"
+            android:gravity="center"
+            android:text="电能替代产品技术介绍"
+            android:textColor="@color/color_fffffff"
+            android:textSize="@dimen/y50">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnUpload3"
+                android:layout_width="@dimen/y240"
+                android:layout_height="@dimen/y74"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/icon_button"
+                android:gravity="center"
+                android:text="上传"
+                android:textSize="@dimen/y36"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnLook3"
+                android:layout_width="@dimen/y240"
+                android:layout_height="@dimen/y74"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/y40"
+                android:background="@mipmap/icon_button2"
+                android:gravity="center"
+                android:text="预览"
+                android:textColor="@color/color_fffffff"
+                android:textSize="@dimen/y36"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y260"
+        android:layout_marginLeft="@dimen/y100"
+        android:layout_marginRight="@dimen/y100"
+        android:layout_marginTop="@dimen/y75"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/icon_business"
+            android:gravity="center"
+            android:text="分布式光伏技术项目介绍"
+            android:textColor="@color/color_fffffff"
+            android:textSize="@dimen/y50">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnUpload4"
+                android:layout_width="@dimen/y240"
+                android:layout_height="@dimen/y74"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/icon_button"
+                android:gravity="center"
+                android:text="上传"
+                android:textSize="@dimen/y36"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnLook4"
+                android:layout_width="@dimen/y240"
+                android:layout_height="@dimen/y74"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/y40"
+                android:background="@mipmap/icon_button2"
+                android:gravity="center"
+                android:text="预览"
+                android:textColor="@color/color_fffffff"
+                android:textSize="@dimen/y36"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>
