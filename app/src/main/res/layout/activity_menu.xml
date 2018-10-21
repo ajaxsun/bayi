@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@mipmap/icon_bg"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <include layout="@layout/titlebusiness"></include>
+    <LinearLayout android:layout_width="match_parent"
+                  android:gravity="center_vertical"
+                  android:layout_marginLeft="@dimen/y60"
+                  android:layout_height="@dimen/y200">
+
+        <CheckBox
+                android:id="@+id/cb001"
+                android:layout_width="wrap_content"
+                android:drawableLeft="@drawable/menu_check"
+                android:text="节能用电常识介绍"
+                android:button="@null"
+                android:textSize="@dimen/y48"
+                android:layout_marginLeft="@dimen/y20"
+                android:textColor="@color/color_fffffff"
+                android:drawablePadding="@dimen/x30"
+                android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+          android:layout_marginLeft="@dimen/y40"
+          android:layout_marginRight="@dimen/y40"
+          android:layout_height="@dimen/y1"
+          android:background="@color/colorline"></View>
+    <LinearLayout android:layout_width="match_parent"
+                  android:gravity="center_vertical"
+                  android:layout_marginLeft="@dimen/y60"
+                  android:layout_height="@dimen/y200">
+
+        <CheckBox
+                android:id="@+id/cb002"
+                android:layout_width="wrap_content"
+                android:drawableLeft="@drawable/menu_check"
+                android:text="安全用电常识介绍"
+                android:button="@null"
+                android:textSize="@dimen/y48"
+                android:layout_marginLeft="@dimen/y20"
+                android:textColor="@color/color_fffffff"
+                android:drawablePadding="@dimen/x30"
+                android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+          android:layout_marginLeft="@dimen/y40"
+          android:layout_marginRight="@dimen/y40"
+          android:layout_height="@dimen/y1"
+          android:background="@color/colorline"></View>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/y60"
+            android:layout_height="@dimen/y200">
+
+        <CheckBox
+                android:id="@+id/cb003"
+                android:layout_width="wrap_content"
+                android:drawableLeft="@drawable/menu_check"
+                android:text="电能替代产品技术介绍"
+                android:button="@null"
+                android:textSize="@dimen/y48"
+                android:layout_marginLeft="@dimen/y20"
+                android:textColor="@color/color_fffffff"
+                android:drawablePadding="@dimen/x30"
+                android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+          android:layout_marginLeft="@dimen/y40"
+          android:layout_marginRight="@dimen/y40"
+          android:layout_height="@dimen/y1"
+          android:background="@color/colorline"></View>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:gravity="center_vertical"
+                  android:layout_marginLeft="@dimen/y60"
+                  android:layout_height="@dimen/y200">
+
+        <CheckBox
+                android:id="@+id/cb004"
+                android:layout_width="wrap_content"
+                android:drawableLeft="@drawable/menu_check"
+                android:text="电动汽车充电桩建设"
+                android:button="@null"
+                android:textSize="@dimen/y48"
+                android:layout_marginLeft="@dimen/y20"
+                android:textColor="@color/color_fffffff"
+                android:drawablePadding="@dimen/x30"
+                android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+          android:layout_marginLeft="@dimen/y40"
+          android:layout_marginRight="@dimen/y40"
+          android:layout_height="@dimen/y1"
+          android:background="@color/colorline"></View>
+    <LinearLayout android:layout_width="match_parent"
+                  android:gravity="center_vertical"
+                  android:layout_marginLeft="@dimen/y60"
+                  android:layout_height="@dimen/y200">
+
+        <CheckBox
+                android:id="@+id/cb005"
+                android:layout_width="wrap_content"
+                android:drawableLeft="@drawable/menu_check"
+                android:text="谷峰电价实惠体验"
+                android:button="@null"
+                android:textSize="@dimen/y48"
+                android:layout_marginLeft="@dimen/y20"
+                android:textColor="@color/color_fffffff"
+                android:drawablePadding="@dimen/x30"
+                android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+          android:layout_marginLeft="@dimen/y40"
+          android:layout_marginRight="@dimen/y40"
+          android:layout_height="@dimen/y1"
+          android:background="@color/colorline"></View>
+    <LinearLayout android:layout_width="match_parent"
+                  android:gravity="center_vertical"
+                  android:layout_marginLeft="@dimen/y60"
+                  android:layout_height="@dimen/y200">
+
+        <CheckBox
+                android:id="@+id/cb006"
+                android:layout_width="wrap_content"
+                android:drawableLeft="@drawable/menu_check"
+                android:text="家电能耗分析体验"
+                android:button="@null"
+                android:textSize="@dimen/y48"
+                android:layout_marginLeft="@dimen/y20"
+                android:textColor="@color/color_fffffff"
+                android:drawablePadding="@dimen/x30"
+                android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+          android:layout_marginLeft="@dimen/y40"
+          android:layout_marginRight="@dimen/y40"
+          android:layout_height="@dimen/y1"
+          android:background="@color/colorline"></View>
+    <LinearLayout android:layout_width="match_parent"
+                  android:gravity="center_vertical"
+                  android:layout_marginLeft="@dimen/y60"
+                  android:layout_height="@dimen/y200">
+
+        <CheckBox
+                android:id="@+id/cb007"
+                android:layout_width="wrap_content"
+                android:drawableLeft="@drawable/menu_check"
+                android:text="分布式光伏技术项目体验"
+                android:button="@null"
+                android:textSize="@dimen/y48"
+                android:layout_marginLeft="@dimen/y20"
+                android:textColor="@color/color_fffffff"
+                android:drawablePadding="@dimen/x30"
+                android:layout_height="wrap_content"
+        />
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+          android:layout_marginLeft="@dimen/y40"
+          android:layout_marginRight="@dimen/y40"
+          android:layout_height="@dimen/y1"
+          android:background="@color/colorline"></View>
+    <Button android:layout_width="@dimen/y340"
+            android:id="@+id/btnSave"
+            android:layout_height="@dimen/y76"
+            android:layout_marginTop="@dimen/y67"
+            android:layout_gravity="center"
+            android:background="@mipmap/icon_button"
+            android:text="保存"
+            android:textSize="@dimen/y36"/>
+</LinearLayout>

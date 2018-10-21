@@ -8,5 +8,6 @@
     <color name="color_fffffff">#ffffff</color>
     <color name="color_c8d0d0">#c8d0d0</color>
     <color name="color_00000000">#00000000</color>
+    <color name="colorline">#0d7f7f</color>
     <color name="color_313135">#313135</color>
 </resources>

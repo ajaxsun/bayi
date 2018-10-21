@@ -21,6 +21,7 @@ import com.node.bayi.ui.main.introduce.EnergyIntroduceActivity;
 import com.node.bayi.ui.main.introduce.LectricActivity;
 import com.node.bayi.ui.main.introduce.SecurityActivity;
 import com.node.bayi.ui.setting.SettingActivity;
+import com.node.bayi.utils.sp.PreferencesHelper;
 
 public class Main2Activity extends BaseActivity {
     @BindView(R.id.ivBack)
@@ -43,7 +44,7 @@ public class Main2Activity extends BaseActivity {
     @BindView(R.id.mProductContent)
     RelativeLayout mProductContent;//电能替代产品技术介绍
     @BindView(R.id.mPhotovoltaicContent)
-    RelativeLayout mPhotovoltaicContent;//分布式光伏技术项目介绍
+    RelativeLayout mPhotovoltaicContent;
 
     @BindView(R.id.ivSetting)
     ImageView ivSetting;
@@ -58,6 +59,7 @@ public class Main2Activity extends BaseActivity {
         ivBack.setVisibility(View.GONE);
         tvTitle.setText("首页");
         ivSetting.setVisibility(View.GONE);
+
     }
 
     @Override
@@ -80,6 +82,46 @@ public class Main2Activity extends BaseActivity {
     @Override
     protected int statusColor() {
         return 0;
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (PreferencesHelper.getBoolean("cb001", true)) {
+            meLectricContent.setVisibility(View.VISIBLE);
+        } else {
+            meLectricContent.setVisibility(View.GONE);
+        }
+        if (PreferencesHelper.getBoolean("cb002", true)) {
+            mSecurityContent.setVisibility(View.VISIBLE);
+        } else {
+            mSecurityContent.setVisibility(View.GONE);
+        }
+        if (PreferencesHelper.getBoolean("cb003", true)) {
+            mProductContent.setVisibility(View.VISIBLE);
+        } else {
+            mProductContent.setVisibility(View.GONE);
+        }
+        if (PreferencesHelper.getBoolean("cb004", true)) {
+            mPhotovoltaicContent.setVisibility(View.VISIBLE);
+        } else {
+            mPhotovoltaicContent.setVisibility(View.GONE);
+        }
+        if (PreferencesHelper.getBoolean("cb005", true)) {
+            mPeakVallyPriceContent.setVisibility(View.VISIBLE);
+        } else {
+            mPeakVallyPriceContent.setVisibility(View.GONE);
+        }
+        if (PreferencesHelper.getBoolean("cb006", true)) {
+            mEnergyContent.setVisibility(View.VISIBLE);
+        } else {
+            mEnergyContent.setVisibility(View.GONE);
+        }
+        if (PreferencesHelper.getBoolean("cb007", true)) {
+            mPhotovoltaicContent2.setVisibility(View.VISIBLE);
+        } else {
+            mPhotovoltaicContent2.setVisibility(View.GONE);
+        }
     }
 
     long exitTime = 0;

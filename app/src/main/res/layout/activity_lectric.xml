@@ -1,42 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@mipmap/icon_bg"
-    android:orientation="vertical"
-    android:keepScreenOn="true"
-    tools:context=".ui.main.introduce.LectricActivity">
-
-    <include layout="@layout/titlebusiness">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/icon_bg"
+                android:orientation="vertical"
+                android:keepScreenOn="true"
+                tools:context=".ui.main.introduce.LectricActivity">
+    <include layout="@layout/titlebusiness" android:id="@+id/topContent">
 
     </include>
-    <es.voghdev.pdfviewpager.library.PDFViewPager
-        android:id="@+id/mPDFViewPager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:assetFileName="节能用电常识介绍.pdf"
-        android:layout_below="@+id/topContent" />
-    <!--<TextView-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginLeft="@dimen/y67"-->
-        <!--android:background="@mipmap/icon_kuang"-->
-        <!--android:gravity="center"-->
-        <!--android:text="推广节能用电"-->
-        <!--android:textColor="@color/color_fffffff"-->
-        <!--android:textSize="@dimen/y52" />-->
+    <ImageView
+            android:layout_below="@+id/topContent"
+            android:layout_width="match_parent"
+            android:id="@+id/ivImageview"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent" />
 
-    <!--<TextView-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:layout_marginTop="@dimen/y87"-->
-        <!--android:lineSpacingExtra="@dimen/y50"-->
-        <!--android:paddingLeft="@dimen/y67"-->
-        <!--android:paddingRight="@dimen/y67"-->
-        <!--android:text="空调制冷制热温度设置和风向对空间的效果，电视、空调、饮水机等设备不用时断开电源（不带电待机），热水器设置在谷电时段工作，不具备智能控制的不用时断开电源（防止低于一定温度后反复加热耗电），农村水泵生活打水在谷电时打水储存，照明使用节能灯等。"-->
-        <!--android:textColor="@color/color_fffffff"-->
-        <!--android:textSize="@dimen/y48" />-->
-
-</LinearLayout>
+</RelativeLayout>

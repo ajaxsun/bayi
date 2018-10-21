@@ -1,52 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@mipmap/icon_bg"
-    android:keepScreenOn="true"
-    tools:context=".ui.main.introduce.SecurityActivity">
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/icon_tou" />
-
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:keepScreenOn="true"
+                android:background="@mipmap/icon_bg"
+                tools:context=".ui.main.introduce.SecurityActivity">
     <include
-        android:id="@+id/topContent"
-        layout="@layout/titlebusiness"></include>
-    <es.voghdev.pdfviewpager.library.PDFViewPager
-        android:id="@+id/mPDFViewPager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:assetFileName="安全用电常识介绍.pdf"
-        android:layout_below="@+id/topContent" />
-    <!--<LinearLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--android:layout_below="@+id/topContent"-->
-        <!--android:orientation="vertical">-->
-
-        <!--<TextView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginLeft="@dimen/y67"-->
-            <!--android:background="@mipmap/icon_zise"-->
-            <!--android:gravity="center"-->
-            <!--android:text="推广安全用电"-->
-            <!--android:textColor="@color/color_fffffff"-->
-            <!--android:textSize="@dimen/y52" />-->
-
-        <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_marginTop="@dimen/y87"-->
-            <!--android:lineSpacingExtra="@dimen/y50"-->
-            <!--android:paddingLeft="@dimen/y67"-->
-            <!--android:paddingRight="@dimen/y67"-->
-            <!--android:text="室内用电线路网络防触电、漏电技术要求（有接地线、安装漏电保护器、主线路线径标准、插座防触电、漏电要求等），室内用电防止触电、漏电标准要求（室内水枪清洗、漏电保护器试跳及动作后隐患排查），室外作业或活动（线下建房、垂钓、吊车作业、破路施工）、雨天道路和院内防触电常识、发现触电这解救正确方法等。"-->
-            <!--android:textColor="@color/color_fffffff"-->
-            <!--android:textSize="@dimen/y48" />-->
-    <!--</LinearLayout>-->
+            android:id="@+id/topContent"
+            layout="@layout/titlebusiness">
+    </include>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ivImageview"
+            android:scaleType="fitXY"
+            android:layout_below="@+id/topContent"/>
 </RelativeLayout>

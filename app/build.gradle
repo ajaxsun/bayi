@@ -29,14 +29,14 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    implementation 'cn.bingoogolapple:bga-banner:2.1.7'
+//    implementation 'cn.bingoogolapple:bga-banner:2.1.7'
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
     implementation 'com.github.bumptech.glide:glide:4.8.0'
     implementation 'com.google.code.gson:gson:2.8.5'
     implementation 'com.android.support:recyclerview-v7:27.1.1'
-
-    compile 'es.voghdev.pdfviewpager:library:1.0.5'
+    compile 'com.youth.banner:banner:1.4.10'  //最新版本
+//    compile 'es.voghdev.pdfviewpager:library:1.0.5'
 //    compile 'com.joanzapata.pdfview:android-pdfview:1.0.4@aar'
     compile 'com.amap.api:location:3.3.0'
     compile 'com.amap.api:3dmap:5.0.0'

@@ -1,26 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@mipmap/icon_bg"
-    android:keepScreenOn="true"
-    tools:context=".ui.main.introduce.SecurityActivity">
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/icon_dianneng" />
-
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/icon_bg"
+                android:keepScreenOn="true" >
     <include
-        android:id="@+id/topContent"
-        layout="@layout/titlebusiness"></include>
+            android:id="@+id/topContent"
+            layout="@layout/titlebusiness"></include>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/topContent"
+            android:scaleType="fitXY"
+            android:id="@+id/ivImageview"
+            android:layout_height="match_parent"/>
 
-    <es.voghdev.pdfviewpager.library.PDFViewPager
-        android:id="@+id/mPDFViewPager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:assetFileName="电能替代产品介绍.pdf"
-        android:layout_below="@+id/topContent" />
 </RelativeLayout>

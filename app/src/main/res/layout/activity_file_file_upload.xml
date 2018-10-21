@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/icon_bg"
+        android:orientation="vertical"
+        tools:context=".ui.main.fileupload.FileFileUploadActivity">
+    <include layout="@layout/titlebusiness"></include>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/y177"
+            android:gravity="center_vertical"
+
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="@dimen/y300"
+                android:gravity="right"
+                android:text="业务文件路径:"
+                android:textColor="@color/color_fffffff"
+                android:textSize="@dimen/y36"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tvyewuFile"
+                android:text="root、admin/ada"
+                android:layout_marginLeft="@dimen/y27"
+                android:textColor="@color/color_fffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/y50"
+                android:background="@mipmap/icon_shurukuang2"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/y66"
+            android:gravity="center_vertical"
+
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="@dimen/y300"
+                android:gravity="right"
+                android:text="屏保图片文件路径:"
+                android:textColor="@color/color_fffffff"
+
+                android:textSize="@dimen/y36"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tvScreenSaveFile"
+                android:text="root、admin/ada"
+                android:textColor="@color/color_fffffff"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/y50"
+                android:layout_marginLeft="@dimen/y27"
+                android:background="@mipmap/icon_shurukuang2"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button android:layout_width="@dimen/y270"
+            android:layout_height="@dimen/y74"
+            android:id="@+id/btnSave"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y100"
+            android:text="保存"
+            android:textSize="@dimen/y36"
+            android:background="@mipmap/icon_button"/>
+</LinearLayout>

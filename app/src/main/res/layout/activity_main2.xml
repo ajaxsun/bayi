@@ -16,6 +16,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_horizontal"
+
                 android:orientation="vertical">
             <RelativeLayout
                     android:id="@+id/meLectricContent"
@@ -133,7 +134,6 @@
                     android:id="@+id/mPhotovoltaicContent2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/y100"
                     android:layout_marginTop="@dimen/y167"
                     android:background="@mipmap/icon_4">
                 <TextView
