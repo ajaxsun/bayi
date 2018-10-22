@@ -22,13 +22,13 @@
                 android:textColor="@color/color_fffffff"
                 android:textSize="@dimen/y36"
                 android:layout_height="wrap_content"/>
-        <TextView
+        <EditText
                 android:layout_width="wrap_content"
                 android:id="@+id/tvyewuFile"
-                android:text="root、admin/ada"
                 android:layout_marginLeft="@dimen/y27"
                 android:textColor="@color/color_fffffff"
                 android:gravity="center_vertical"
+                android:layout_marginRight="@dimen/y44"
                 android:paddingLeft="@dimen/y50"
                 android:background="@mipmap/icon_shurukuang2"
                 android:layout_height="wrap_content"/>
@@ -38,29 +38,28 @@
             android:orientation="horizontal"
             android:layout_marginTop="@dimen/y66"
             android:gravity="center_vertical"
-
             android:layout_height="wrap_content">
         <TextView
                 android:layout_width="@dimen/y300"
                 android:gravity="right"
                 android:text="屏保图片文件路径:"
                 android:textColor="@color/color_fffffff"
-
                 android:textSize="@dimen/y36"
                 android:layout_height="wrap_content"/>
-        <TextView
+        <EditText
                 android:layout_width="wrap_content"
                 android:id="@+id/tvScreenSaveFile"
-                android:text="root、admin/ada"
                 android:textColor="@color/color_fffffff"
                 android:gravity="center_vertical"
                 android:paddingLeft="@dimen/y50"
+                android:layout_marginRight="@dimen/y44"
                 android:layout_marginLeft="@dimen/y27"
                 android:background="@mipmap/icon_shurukuang2"
                 android:layout_height="wrap_content"/>
     </LinearLayout>
 
-    <Button android:layout_width="@dimen/y270"
+    <Button
+            android:layout_width="@dimen/y270"
             android:layout_height="@dimen/y74"
             android:id="@+id/btnSave"
             android:layout_gravity="center_horizontal"

@@ -6,6 +6,7 @@ import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
@@ -26,6 +27,7 @@ import com.youth.banner.BannerConfig;
 import com.youth.banner.listener.OnBannerListener;
 import com.youth.banner.loader.ImageLoader;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,6 +44,7 @@ public class ScreenSaverActivity extends AppCompatActivity {
     RelativeLayout mRelative;
     @BindView(R.id.mVideoView)
     FullVideoView mVideoView;
+    List<String> list = null;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -66,19 +69,20 @@ public class ScreenSaverActivity extends AppCompatActivity {
                 mBGABanner.setDelayTime(PreferencesHelper.getInt("interval") * 1000);
             }
             try {
-                //本地图片数据（资源文件）
-                List<Integer> list = new ArrayList<>();
-                list.add(R.drawable.icon_01);
-                list.add(R.drawable.icon_02);
-                list.add(R.drawable.icon_03);
-                list.add(R.drawable.icon_04);
-                list.add(R.drawable.icon_05);
-                list.add(R.drawable.icon_06);
-                list.add(R.drawable.icon_07);
-                list.add(R.drawable.icon_08);
-                list.add(R.drawable.icon_09);
-                list.add(R.drawable.icon_10);
-                mBGABanner.setImages(list);
+//                //本地图片数据（资源文件）
+                list = new ArrayList<>();
+//                list.add(R.drawable.icon_01);
+//                list.add(R.drawable.icon_02);
+//                list.add(R.drawable.icon_03);
+//                list.add(R.drawable.icon_04);
+//                list.add(R.drawable.icon_05);
+//                list.add(R.drawable.icon_06);
+//                list.add(R.drawable.icon_07);
+//                list.add(R.drawable.icon_08);
+//                list.add(R.drawable.icon_09);
+//                list.add(R.drawable.icon_10);
+//                mBGABanner.setImages(list);
+                readPic();
                 mBGABanner.setImages(list)
                         .setImageLoader(new ImageLoader() {
                             @Override
@@ -174,6 +178,18 @@ public class ScreenSaverActivity extends AppCompatActivity {
         }
         if (mVideoView != null) {
             mVideoView.stopPlayback();
+        }
+    }
+
+    private void readPic() {
+        File screensavePath = new File(PreferencesHelper.getData("screensavePath") + "");
+        if (screensavePath.isDirectory()) {
+            for (File file : screensavePath.listFiles()) {
+                String path = file.getAbsolutePath();
+                if (path.endsWith(".jpg") || path.endsWith(".jpeg") || path.endsWith(".png")) {
+                    list.add(path);
+                }
+            }
         }
     }
 }

@@ -2,8 +2,10 @@ package com.node.bayi.ui.main;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
+import android.os.Environment;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -22,6 +24,8 @@ import com.node.bayi.ui.main.introduce.LectricActivity;
 import com.node.bayi.ui.main.introduce.SecurityActivity;
 import com.node.bayi.ui.setting.SettingActivity;
 import com.node.bayi.utils.sp.PreferencesHelper;
+
+import java.io.File;
 
 public class Main2Activity extends BaseActivity {
     @BindView(R.id.ivBack)
@@ -59,7 +63,7 @@ public class Main2Activity extends BaseActivity {
         ivBack.setVisibility(View.GONE);
         tvTitle.setText("首页");
         ivSetting.setVisibility(View.GONE);
-
+        createPath();
     }
 
     @Override
@@ -165,5 +169,25 @@ public class Main2Activity extends BaseActivity {
         }
     }
 
-
+    /**
+     * 创建目录
+     */
+    private void createPath() {
+        File file = new File(Environment.getExternalStorageDirectory() + "/bayi/bunsiness");
+        if (!file.exists()) {
+            file.mkdir();
+            PreferencesHelper.saveData("bunsinessPath", file.getAbsolutePath());
+        }
+        File file1 = new File(Environment.getExternalStorageDirectory() + "/bayi/screensave");
+        if (!file1.exists()) {
+            file1.mkdir();
+            PreferencesHelper.saveData("screensavePath", file1.getAbsolutePath());
+        }
+        if (TextUtils.isEmpty(PreferencesHelper.getData("bunsinessPath"))) {
+            PreferencesHelper.saveData("bunsinessPath", file.getAbsolutePath());
+        }
+        if (TextUtils.isEmpty(PreferencesHelper.getData("screensavePath"))) {
+            PreferencesHelper.saveData("screensavePath", file.getAbsolutePath());
+        }
+    }
 }

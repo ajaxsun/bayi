@@ -5,19 +5,17 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
-
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
 import com.node.bayi.R;
 import com.node.bayi.ui.screensaver.ScreenSaverActivity;
 import com.node.bayi.utils.AppManager;
 import com.node.bayi.utils.sp.PreferencesHelper;
 
+import java.io.File;
 import java.util.Date;
-
-import butterknife.ButterKnife;
-import butterknife.Unbinder;
 
 /**
  * Created by 孙伟
@@ -107,7 +105,12 @@ public abstract class BaseActivity extends AppCompatActivity {
                     isRunScreenSaver = true;
                 } else {
                     /*屏保显示*/
-                    showScreenSaver();
+                    if (isExitsPic()) {
+                        showScreenSaver();
+//                        Toast.makeText(BaseActivity.this, "请配置到轮播图文件夹下配置轮播图片", Toast.LENGTH_SHORT).show();
+                    } else {
+
+                    }
                 }
             } else {
 //                Log.e(TAG, "run:-time<15秒---- " + timePeriodSecond);
@@ -125,7 +128,13 @@ public abstract class BaseActivity extends AppCompatActivity {
         public void run() {
             if (isRunScreenSaver == true) {
                 //如果屏保正在显示，就计算不断持续显示  //
-                showScreenSaver();
+                if (isExitsPic()) {
+                    showScreenSaver();
+                } else {
+                    /*显示屏保置为true*/
+                    isRunScreenSaver = false;
+//                    Toast.makeText(BaseActivity.this, "请配置到轮播图文件夹下配置轮播图片", Toast.LENGTH_SHORT).show();
+                }
                 mHandler02.postDelayed(mTask02, intervalScreenSaver);
             } else {
                 mHandler02.removeCallbacks(mTask02);  //如果屏保没有显示则移除线程
@@ -195,5 +204,22 @@ public abstract class BaseActivity extends AppCompatActivity {
         if (unbinder != null) {
             unbinder.unbind();
         }
+    }
+
+
+    private boolean isExitsPic() {
+
+        File screensavePath = new File(PreferencesHelper.getData("screensavePath") + "");
+        if (screensavePath.isDirectory()) {
+            for (File file : screensavePath.listFiles()) {
+                String path = file.getAbsolutePath();
+                if (path.endsWith(".jpg") || path.endsWith(".jpeg") || path.endsWith(".png")) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        }
+        return false;
     }
 }
